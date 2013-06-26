@@ -1,0 +1,5 @@
+# cassandra FDW
+comment = 'Cassandra Foreign Data Wrapper'
+default_version = '0.0.1'
+module_pathname = '$libdir/cassandra_fdw'
+relocatable = true

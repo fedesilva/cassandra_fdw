@@ -1,6 +1,6 @@
 ##############################################################################
 #
-# Blackhole Foreign Data Wrapper for PostgreSQL
+# Cassandra Foreign Data Wrapper for PostgreSQL
 # 
 # Copyright (c) 2013 Andrew Dunstan
 # 
@@ -9,12 +9,12 @@
 # Author: Andrew Dunstan <andrew@dunslane.net>
 # 
 # IDENTIFICATION
-#        blackhole_fdw/Makefile
+#        cassandra_fdw/Makefile
 # 
 ##############################################################################
 
 
-EXTENSION    = blackhole_fdw
+EXTENSION    = cassandra_fdw
 EXTVERSION   = $(shell grep default_version $(EXTENSION).control | sed -e "s/default_version[[:space:]]*=[[:space:]]*'\([^']*\)'/\1/")
 
 DATA         = $(filter-out $(wildcard sql/*--*.sql),$(wildcard sql/*.sql))
